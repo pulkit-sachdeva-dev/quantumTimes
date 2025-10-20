@@ -1,0 +1,95 @@
+body{
+    background-image: url("./Images/3d-fantasy-scene.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Flex-box{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: right;
+    align-items:center ;
+    margin-right: 7%;
+    
+    margin-top: 3%;
+    margin-left: 7%;
+    
+}
+
+/* .Flex-box>div:hover {
+   border: 3px solid purple;
+   
+} */
+
+.Flex-box > div{
+    /* border: 3px solid brown; */
+    width: 350px;
+    height: 500px;
+    background-color:  rgb(229,232,237);
+    border-radius:20px;
+    
+}
+.input{
+/* border: 3px solid red; */
+border-left: 0;
+border-top: 0;
+border-right: 0;
+padding: 5px 10px;
+outline: none;
+font-size: 16px;
+background-color:  rgb(229,232,237);
+
+}
+.form{
+    text-align: center;
+    margin-top: 100px;
+    transform: translateY(-10%);
+
+}
+.checkbox{
+    margin-left: 50px;
+}
+.emaillogo{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    background-color:  rgb(229,232,237);
+}
+.login-button{
+    background-color:#007BFF;
+    box-shadow: 1px 2px 1px rgba(0,0,0,1);
+    width: 35%;
+    height: 40px;
+    font-size: medium; 
+    font-family: calibri;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color:white;
+
+}
+.login-button:active{
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+}
+.img{
+    /* border: 3px solid blue; */
+    border-radius: 50%;
+    width: 85px;
+    position: absolute;
+    top: 15px;
+    right: 15%;
+}
+.p1{
+    font-size:24px;
+    font-family: arial;
+}
+.p2{
+    font-size:18px;
+    font-family: arial;
+    color: grey;
+}
+.reset-password{
+    float: inline-end;
+    color: red;
+    font-size: 18px;
+    margin-right:11%;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish</title>
+    <link rel="icon" href="./Images/quantum_facebook.png">
+    <style>
+        body{
+            background-color: rgb(235,237,238);
+            display: flex;
+            flex-direction: column;
+        }
+        .main_body{
+            display: flex;
+            justify-content:center;
+            height: 50%;
+            align-items: center;
+            
+        }
+        div.top_items{
+            margin-top:10px;
+            height: 40px;
+            align-content: center;
+            text-align: center;
+            width: 100px;  
+            padding: 0px 10px;
+        }
+        button:active{
+            background-color: white;
+            /* border-top: 5px solid rgb(44, 103, 240); */
+            border-top:3px solid rgb(43,101,148);
+        }
+        button:hover{
+            border-top:3px solid rgb(43,101,148);   
+        }
+        button{
+            background-color: rgba(186, 186, 186, 0);
+            border: none;
+            margin-right:3px;
+            color: rgb(43,101,148);
+            
+        }
+        .item{
+            margin-top: 0px;
+            padding: 0px 25px;
+            width: 55%;
+            height: 100%;
+            background-color: white;
+            align-self: center;
+            display: none;
+
+            
+        }
+        .item_content{
+            display: flex;
+            justify-content:center;
+            height: 100%;
+            align-items: center;
+            font-family: Verdana;
+        }
+        .save{
+            background-color: rgb(0, 81, 255);
+            border-radius: 5px;
+            color: white;
+            padding: 10px 5px;
+            float: right;
+        }
+        .save:hover{
+            border: none;
+        }
+        .save:active{
+            background-color: rgb(24, 69, 166);
+        }
+        .checkbox{
+            accent-color: rgb(0, 115, 255);
+        }
+        .choose_file{
+            border: 2px solid rgb(186, 186, 186);
+            padding: 5px 10px;
+            margin-top: 20px;
+            margin-bottom:20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }    
+        .Start{
+            display: block;
+        }
+        .info{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .top_bar{
+width: 100%;
+height: 90px;
+background-color: #f1d4c8;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+img{
+vertical-align: middle;
+}
+body{
+background-color: #f4f4f4;
+text-decoration: none;
+}
+.user_logo{
+color: black;
+border: 2px solid #bf907e;
+margin: 10px;
+width: 200px;
+height: 40px;
+padding: 1px;
+border-radius: 50px;
+background-color: #eec6b7;
+font-family: cursive;
+transition: transform ease-in-out 0.4s;
+}
+.user_logo:hover{
+transform: scale(1.05);
+
+}
+.logo{
+width: 20px;
+height: 20px;
+vertical-align: middle;
+}
+a{
+text-decoration: none;
+color:black;
+}
+.heading{
+font-family: helvetica;
+color: #65241F;
+}
+.login{
+width: 100px;
+}
+.goals{
+width: 25px;
+height: 25px;
+}
+    </style>
+</head>
+<body>
+    <div class="top_bar">
+        <div class="top_nav_heading"><h1 class="heading"><img src="./Images/quantum_facebook-removebg-preview.png" height="50px" width="50px"> Quantum Times</h1></div>
+        <div>
+        <button class="user_logo login" onclick="window.location.href='home.html';" ><img class="logo" src="./Images/home.png">&nbsp; &nbsp;Home</button>
+        <button class="user_logo" onclick="window.location.href='editorial_board.html';"><img class="logo goals" src="./Images/group (1).png">&nbsp; &nbsp;EDITORIAL BOARD</button>
+        <button class="user_logo " onclick="window.location.href='publish.html';"><img class="logo goals" src="./Images/goals.png">&nbsp;&nbsp;PUBLISH</button>
+        <button class="user_logo" onclick="window.location.href='journal_updates.html';"><img class="logo" src="./Images/newspaper.png">&nbsp;&nbsp;JOURNAL UPDATES</button>
+        <button class="user_logo login" onclick="window.location.href='LOGINfinal.html';">Log in</button>
+        </div>
+    </div>
+
+<div class="main_body">
+    <button onclick="buttonAttack('.Start')"><div class="top_items">
+        <h3 style="font-family:cursive;">Start</h3>
+    </div></button>
+
+    <button onclick="buttonAttack('.Upload_file')"><div class="top_items">
+        <h3 style="font-family:cursive;" >Upload file</h3>
+    </div></button>
+
+    <button onclick="buttonAttack('.information')"><div class="top_items">
+        <h3 style="font-family:cursive;">information</h3>
+    </div></button>
+
+    <button onclick="buttonAttack('.Final_submit')"><div class="top_items">
+        <h3 style="font-family:cursive;">Final Submit</h3>
+    </div></button>
+</div>
+
+<!-- <div class="item_content"> -->
+    <div class="Start item" >
+        <h3>Section Policy</h3>
+        <p>Section default policy</p><br>
+        <h3>Submission Requirements</h3>
+        <p style="color: rgb(121, 121, 121);">You must read and acknowledge that you've completed the requirements below before proceeding.</p>
+        <form>
+        <input type="checkbox" class="checkbox" required>&nbsp;&nbsp;The submission has not been previously published, nor is it before another journal for consideration (or an explanation has been provided in Comments to the Editor).<br><br>
+        <input type="checkbox" class="checkbox" required>&nbsp;&nbsp;The submission file is in OpenOffice, Microsoft Word, or RTF document file format.<br><br>
+        <input type="checkbox" class="checkbox" required>&nbsp;&nbsp;Where available, URLs for the references have been provided.<br><br>
+        <input type="checkbox" class="checkbox" required>&nbsp;&nbsp;The text is single-spaced; uses a 12-point font; employs italics, rather than underlining (except with URL addresses); and all illustrations, figures, and tables are placed within the text at the appropriate points, rather than at the end.<br><br>
+        <input type="checkbox" class="checkbox" required>&nbsp;&nbsp;The text adheres to the stylistic and bibliographic requirements outlined in the Author Guidelines.<br><br>
+        <h3>Comments for the Editor</h3>
+        <textarea cols="100" rows="5" required>Write your comment here...</textarea><br><br>
+        <input type="checkbox" class="checkbox" required>&nbsp;&nbsp;Yes, I agree to have my data collected and stored according to the privacy statement.<br><br>
+        <div><input type="submit" class="save" onclick="buttonAttack('.Upload_file')"><br><br></div></form>
+    </div>
+    <div class="Upload_file item" >
+        <div class="choose_file">
+            <h3>Files</h3>
+            <hr>
+            <p>Upload any files the editorial team will need to evaluate your submission.</p>
+            <form action="#action">
+                <input type="file" id="myFile" name="filename">
+                <input type="submit" class="save" onclick="buttonAttack('.information')">
+            </form><br><br>
+        </div>
+    </div>
+    <div class="information item" >
+        <div class="info">
+        <div class="info1">
+            <h3>Prefix</h3>
+            <input type="text" size="30">
+        </div>
+        <div class="info2">
+            <h3>Title</h3>
+            <input type="text" size="70">
+        </div>
+        </div>
+        <h3>Subtitle</h3>
+        <input type="text" size="115">
+    </div>
+    <div class="Final_submit item">
+        <p>Your submission has been uploaded and is ready to be sent. You may go back to review and adjust any of the information you have entered before continuing. When you are ready, click "Finish Submission".</p>
+        <input type="submit" class="save" value="Final Submit" onclick="Click()">
+    </div>
+<!-- </div> -->
+
+
+
+
+
+<script>
+    const homepage = document.querySelector(".Start")
+    const aboutpage = document.querySelector(".Upload_file")
+    const contactpage = document.querySelector(".information")
+    const productpage = document.querySelector(".Final_submit")
+
+    
+    const buttonAttack = (clickedKey)=>{
+    
+    
+        homepage.style.display = "none";
+        aboutpage.style.display = "none";
+        contactpage.style.display = "none";
+        productpage.style.display = "none";
+
+        
+        document.querySelector(clickedKey).style.display="block" ;
+    }
+</script>
+
+
+<!-- <script>
+    function toggleVisibility(itemId) {
+        // Get all items
+        const items = document.querySelectorAll('.item');
+
+        // Hide all items
+
+        items.forEach(item => {
+            
+            if (item.id !== itemId) {
+                item.style.display='none';
+            }
+        });
+
+        // Toggle the selected item
+        const selectedItem = document.getElementById(itemId);
+        if (selectedItem.style.display === "none" || selectedItem.style.display === "") {
+            selectedItem.style.display = "block";
+        }
+    }
+</script> -->
+
+</body>
+</html>

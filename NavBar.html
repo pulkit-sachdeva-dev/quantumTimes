@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+.top_bar{
+width: 100%;
+height: 90px;
+background-color: #f1d4c8;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+img{
+vertical-align: middle;
+}
+body{
+background-color: #f4f4f4;
+text-decoration: none;
+}
+.user_logo{
+border: 2px solid #bf907e;
+margin: 10px;
+width: 200px;
+height: 40px;
+padding: 1px;
+border-radius: 50px;
+background-color: #eec6b7;
+font-family: cursive;
+transition: transform ease-in-out 0.4s;
+}
+.user_logo:hover{
+transform: scale(1.05);
+
+}
+.logo{
+width: 20px;
+height: 20px;
+vertical-align: middle;
+}
+a{
+text-decoration: none;
+color:black;
+
+}
+.heading{
+font-family: helvetica;
+color: #65241F;
+}   
+.aim_scope:active{
+color: aqua;
+}
+.login{
+width: 100px;
+}
+.goals{
+width: 25px;
+height: 25px;
+}
+    </style>
+</head>
+<body>
+    <div class="top_bar">
+        <div class="top_nav_heading"><h1 class="heading"><img src="./Images/quantum_facebook-removebg-preview.png" height="50px" width="50px"> Quantum Times</h1></div>
+        <div>
+        <button class="user_logo login" onclick="window.location.href='home.html';" ><img class="logo" src="./Images/home.png">&nbsp; &nbsp;Home</button>
+        <button class="user_logo" onclick="window.location.href='editorial_board.html';"><img class="logo goals" src="./Images/group (1).png">&nbsp; &nbsp;EDITORIAL BOARD</button>
+        <button class="user_logo aim_scope" onclick="window.location.href='aim_scope.html';"><img class="logo goals" src="./Images/goals.png">&nbsp;&nbsp;AIM & SCOPE</button>
+        <button class="user_logo" onclick="window.location.href='journal_updates.html';"><img class="logo" src="./Images/newspaper.png">&nbsp;&nbsp;JOURNAL UPDATES</button>
+        <button class="user_logo login" onclick="window.location.href='LOGINfinal.html';">Log in</button>
+        </div>
+    </div>
+</body>
+</html>

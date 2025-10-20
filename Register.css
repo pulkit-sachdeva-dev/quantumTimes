@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+   
+    background-image: url('./Images/pexels-fox-58267-1172675.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.Flex-box{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    
+    position: absolute;
+    top: 2em;
+    left: 15em;
+    
+}
+.Flex-box > div{
+  
+    width: 400px;
+    height: 500px;
+    background-color:  rgb(229,232,237);
+    border-radius:20px;
+    
+}
+.input{
+   margin-bottom: 25px;
+   border: 3px solid red;
+   border-left: 0;
+   border-top: 0;
+   border-right: 0;
+   padding: 5px 10px;
+   outline: none;
+   font-size: large;
+   width: 70%;
+   background-color:rgba(244, 244, 244, 0);
+   border-radius: 8px;
+   color: black;
+
+}
+.form{
+    /* border: 2px solid red ; */
+    text-align: center;
+   margin-top: 25px;
+   
+
+}
+.register_button{
+    background-color:#007BFF;
+    box-shadow: 1px 2px 1px rgba(0,0,0,1);
+    width: 80%;
+    height: 40px;
+    font-size: large; 
+    font-family: calibri;
+    border-radius: 20px;
+    padding: 5px 20px;
+    color:white;
+
+}
+.register_button:active{
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    background-color: #006ee3;
+}
+.p1{
+    font-size:xx-large;
+    font-family:cursive;
+    /* border: 2px solid green; */
+}
+.p2{
+    margin-top: 12px;
+    font-size: large;
+    font-family: arial;
+    color: red;
+    
+}
+.have_account{
+    color: red;
+    font-size: 18px;
+}
+.p3{
+    font-family: arial;
+}
+
+.img{
+    /* border: 3px solid blue; */
+    border-radius: 50%;
+    width: 85px;
+    position: absolute;
+    top: 0px;
+    left: 0em ;
+}
