@@ -10,14 +10,21 @@
 <body>
     
     <div class="top_bar">
-        <div class="top_nav_heading"><h1 class="heading"><img src="./Images/quantum_facebook-removebg-preview.png" height="50px" width="50px"> Quantum Times</h1></div>
-        <div>
+        <div class="top_nav_heading">
+            <h1 class="heading"><img src="./Images/quantum_facebook-removebg-preview.png" height="50px" width="50px"> Quantum Times</h1></div>
+       
+        <nav class="main-nav">
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+            ☰
+        </button>
+        <div class="nav-links">     
         <button class="user_logo login" onclick="window.location.href='home.html';" ><img class="logo" src="./Images/home.png">&nbsp; &nbsp;Home</button>
         <button class="user_logo" onclick="window.location.href='editorial_board.html';"><img class="logo goals" src="./Images/group (1).png">&nbsp; &nbsp;EDITORIAL BOARD</button>
         <button class="user_logo aim_scope" onclick="window.location.href='publish.html';"><img class="logo goals" src="./Images/goals.png">&nbsp;&nbsp;PUBLISH</button>
         <button class="user_logo" onclick="window.location.href='journal_updates.html';"><img class="logo" src="./Images/newspaper.png">&nbsp;&nbsp;JOURNAL UPDATES</button>
         <button class="user_logo login" onclick="window.location.href='LOGINfinal.html';">Log in</button>
         </div>
+        </nav>
     </div>
     <div class="main_content">
         <div class="Overview">
@@ -81,6 +88,6 @@
             
         </div>
     </div>
-    
+    <script src="./js/nav.js"></script> 
 </body>
 </html>

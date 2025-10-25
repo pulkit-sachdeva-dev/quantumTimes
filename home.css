@@ -113,4 +113,82 @@ a:hover{
 .goals{
     width: 25px;
     height: 25px;
+}  
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px;
+    color: #65241F;
+    margin-right: 15px;
+    content: "☰";
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+     .nav-links {
+        display: none;
+        position: absolute;
+        top: 90px;    /* Match header height */
+        left: 0;
+        right: 0;
+        background: #f1d4c8;
+        padding: 15px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        flex-direction: column;
+        z-index: 1000;
+        border-top: 1px solid #bf907e;  /* Added border */
+    }
+    .top_bar {
+        position: relative;
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #f1d4c8;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .user_logo {
+        width: 90%;
+        margin: 5px auto;
+        text-align: left;
+    }
+
+    .main-nav {
+        justify-content: flex-end;
+        width: auto;
+    }
 }
