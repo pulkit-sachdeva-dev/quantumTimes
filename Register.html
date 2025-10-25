@@ -4,36 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="icon" href="./Images/chitkaraLogo.jpg"></link>
+    <link rel="icon" href="./Images/chitkaraLogo.jpg">
     <link rel="stylesheet" href="Register.css">
+    <style>
+        /* Animation for alerts */
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        
+        /* Password strength indicator */
+        .password-strength {
+            font-size: 12px;
+            margin-top: 5px;
+            font-family: calibri, sans-serif;
+        }
+    </style>
 </head>
-<body >
+<body>
 <div class="Flex-box">
-
-    
     <div>
-        
-        <form class="form">
-        <p class="p1"><b>Register</b></p>
-        <p class="p2">Enter Your Details</p><br>
-        <input class="input" type="text" id="Username" name="Username" placeholder="Username"  >
-      
-        <input class="input" type="text" id="Email" name="Email" placeholder="Email">
-        
-        <input class="input" type="password" id="password" name="password" placeholder="Password">
-        
-        <input class="input" type="password" id="password" name="password" placeholder="Confirm Password">
-        
-    </form>
-    <center>
-        <a href="./Home.html">
-            <input class="register_button" type="submit" value="REGISTER"><br><br><br>
-        </a>
-    
-    <p class="p3">Have an account?
-        <a class="have_account" href="LOGINfinal.html">Login Here</a></p>
-    </center>
+        <form class="form" id="registerForm">
+            <p class="p1"><b>Register</b></p>
+            <p class="p2">Enter Your Details</p><br>
+            <input class="input" type="text" id="Username" name="Username" placeholder="Username" required>
+            
+            <input class="input" type="email" id="Email" name="Email" placeholder="Email" required>
+            
+            <input class="input" type="password" id="password" name="password" placeholder="Password" required>
+            
+            <input class="input" type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+        </form>
+        <center>
+            <input class="register_button" type="submit" value="REGISTER" id="registerBtn"><br><br><br>
+            
+            <p class="p3">Have an account?
+                <a class="have_account" href="login.html">Login Here</a>
+            </p>
+        </center>
     </div>
 </div>
+
+<!-- Authentication script -->
+<script src="./js/auth.js"></script>
 </body>
 </html>
